@@ -5,11 +5,18 @@ const token = process.env.DISCORDTOKEN;
 
 const express = require('express');
 const bodyParser = require('body-parser');
+var cors = require('cors');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
+app.use(
+    cors({
+      origin: "*",
+      methods: ["GET", "POST", "DELETE", "UPDATE", "PUT", "PATCH"],
+    })
+  );
 
 console.log("Bot is starting...");
 
