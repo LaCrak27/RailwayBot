@@ -21,7 +21,7 @@
         "baseUrl": "./"
     },
     "files": [
-        "src/Bot.ts"
+        "src/railwaybot.ts"
     ],
     "include": [
         "./**/*.ts"
