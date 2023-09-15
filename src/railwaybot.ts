@@ -33,7 +33,7 @@ client.on("ready", async () => {
 });
 
 app.post('/railway', (req: any, res: any) => {
-    console.log('Received webhook:', req.body.type);
+    console.log('Received webhook:', req.body);
     res.sendStatus(204);
 });
 
