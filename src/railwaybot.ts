@@ -104,32 +104,32 @@ async function GetUsage() {
             .addFields(
                 {
                     name: "CPU Usage",
-                    value: `${project.CpuUsage.toFixed(4)}vCores/min\n($${(project.CpuUsage * 0.000463).toFixed(4)})`,
+                    value: `${project.CpuUsage.toFixed(4)}vCores\n($${(project.CpuUsage * 0.000463).toFixed(4)})`,
                     inline: true
                 },
                 {
                     name: "Memory Usage",
-                    value: `${project.MemUsage.toFixed(4)}GB/min\n($${(project.MemUsage * 0.000231).toFixed(4)})`,
+                    value: `${project.MemUsage.toFixed(4)}GB\n($${(project.MemUsage * 0.000231).toFixed(4)})`,
                     inline: true
                 },
                 {
                     name: "Egress",
-                    value: `${project.Egress.toFixed(4)}GB/min\n($${(project.Egress * 0.1).toFixed(4)})`,
+                    value: `${project.Egress.toFixed(4)}GB\n($${(project.Egress * 0.1).toFixed(4)})`,
                     inline: true
                 },
                 {
                     name: "Estimated CPU Usage",
-                    value: `${project.EstimatedCpuUsage.toFixed(4)}vCores/min\n($${(project.EstimatedCpuUsage * 0.000463).toFixed(4)})`,
+                    value: `${project.EstimatedCpuUsage.toFixed(4)}vCores\n($${(project.EstimatedCpuUsage * 0.000463).toFixed(4)})`,
                     inline: true
                 },
                 {
                     name: "Estimated Memory Usage",
-                    value: `${project.EstimatedMemUsage.toFixed(4)}GB/min\n($${(project.EstimatedMemUsage * 0.000231).toFixed(4)})`,
+                    value: `${project.EstimatedMemUsage.toFixed(4)}GB\n($${(project.EstimatedMemUsage * 0.000231).toFixed(4)})`,
                     inline: true
                 },
                 {
                     name: "Estimated Egress",
-                    value: `${project.EstimatedEgress.toFixed(4)}GB/min\n($${(project.EstimatedEgress * 0.1).toFixed(4)})`,
+                    value: `${project.EstimatedEgress.toFixed(4)}GB\n($${(project.EstimatedEgress * 0.1).toFixed(4)})`,
                     inline: true
                 },
             )
