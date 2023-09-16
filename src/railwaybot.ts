@@ -36,7 +36,7 @@ client.on("ready", async () => {
 
 const graphQLClient = new GraphQLClient('https://backboard.railway.app/graphql/v2', {
     headers: {
-        "Authorization": "Bearer 86953758-7d7a-4504-9fcc-7431ecba452e"
+        "Authorization": `Bearer ${process.env.RAILWAYAPIKEY}`
     },
 });
 const query = gql`
