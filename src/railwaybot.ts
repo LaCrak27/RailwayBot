@@ -30,7 +30,7 @@ client.on("ready", async () => {
     if (!client.user || !client.application) {
         return;
     }
-    if (process.env.TEAMID === "") {
+    if (process.env.TEAMID === "" || process.env.TEAMID === undefined) {
         GetUsage();
     }
     else {
@@ -105,7 +105,7 @@ query me {
 
 //Cron-job for usage alerts
 cron.schedule('0 * * * *', async () => {
-    if (process.env.TEAMID === "") {
+    if (process.env.TEAMID === "" || process.env.TEAMID === undefined) {
         GetUsage();
     }
     else {
