@@ -114,4 +114,4 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Sponsors
 
-- <img src="https://ponderly.s3.us-east-2.amazonaws.com/production/ponderly-logo.jpg" alt="drawing" width="32"/> $160 USD. You can learn more about them [here](https://www.ponder.ly/)
+- <img src="https://ponderly.s3.us-east-2.amazonaws.com/production/ponderly-logo.jpg" alt="drawing" width="32"/> $160 USD. You can learn more about them <a href="https://www.ponder.ly/" target="_blank">here!</a>
