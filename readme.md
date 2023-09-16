@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/LaCrak27/RailwayBot">
-    <img src="https://devicons.railway.app/i/railway-light.svg" alt="Logo" width="80" height="80">
+    <img src="https://devicons.railway.app/i/railway-dark.svg" alt="Logo" width="80" height="80">
   </a>
 
 <h1 align="center">RailwayBot</h1>

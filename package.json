@@ -4,7 +4,8 @@
   "description": "A companion bot to railway.app, offering everything from usage reports to notifications of all kind",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node src/railwaybot.ts"
+    "build": "tsc --build",
+    "start": "node ./dist/railwaybot.js"
   },
   "author": "",
   "license": "ISC",
