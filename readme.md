@@ -1,3 +1,4 @@
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/alYGiV?referralCode=HqjCnM)
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -12,6 +13,7 @@
     <br />
     <a href="https://github.com/LaCrak27/RailwayBot/issues">Report Bug/Request features</a>
   </p>
+  
 </div>
 
 
