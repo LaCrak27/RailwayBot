@@ -35,6 +35,7 @@ client.on("ready", async () => {
 
 app.post('/railway', (req: any, res: any) => {
     processWebhook(req.body);
+    console.log(req.body);
     res.sendStatus(204);
 });
 
@@ -68,7 +69,7 @@ async function SendDeploymentMessage(projectName: string, environmentName: strin
     const channel = await client.channels.fetch(`${process.env.LOGCHANNEL}`) as TextChannel
     const embed = new EmbedBuilder()
         .setAuthor({
-            name: "New Deployment:",
+            name: "Deployment info:",
         })
         .setTitle(projectName)
         .setDescription(`**${status}**`)
