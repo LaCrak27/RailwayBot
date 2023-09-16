@@ -1,4 +1,5 @@
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/alYGiV?referralCode=HqjCnM)
+
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -15,8 +16,6 @@
   </p>
   
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -105,11 +104,14 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#about-railwaybot">back to top</a>)</p>
 
-
-
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#about-railwaybot">back to top</a>)</p>
+
+## Sponsors
+
+- <img src="https://ponderly.s3.us-east-2.amazonaws.com/production/ponderly-logo.jpg" alt="drawing" width="32"/> $160 USD. You can learn more about them <a href="https://www.ponder.ly/" target="_blank">here!</a>
