@@ -67,7 +67,10 @@ function processWebhook(body: WebhookBody) {
 
 async function SendDeploymentMessage(projectName: string, environmentName: string, serviceName: string, deploymentCommit: string, deploymentCommitAuthor: string, status: string) {
     const channel = await client.channels.fetch(`${process.env.LOGCHANNEL}`) as TextChannel
-    const embed = new EmbedBuilder()
+    let embed: EmbedBuilder;
+    if(status != "CRASHED")
+    {
+    embed = new EmbedBuilder()
         .setAuthor({
             name: "Deployment info:",
         })
@@ -101,6 +104,43 @@ async function SendDeploymentMessage(projectName: string, environmentName: strin
             iconURL: "https://devicons.railway.app/i/railway-light.svg",
         })
         .setTimestamp();
+    }
+    else
+    {
+        embed = new EmbedBuilder()
+        .setAuthor({
+            name: "Deployment Crashed:",
+        })
+        .setTitle(projectName)
+        .addFields(
+            {
+                name: "Enviroment",
+                value: environmentName,
+                inline: true
+            },
+            {
+                name: "Service",
+                value: serviceName,
+                inline: true
+            },
+            {
+                name: "Commit Author",
+                value: deploymentCommitAuthor,
+                inline: true
+            },
+            {
+                name: "Commit Message",
+                value: deploymentCommit,
+                inline: false
+            },
+        )
+        .setColor("#ff0000")
+        .setFooter({
+            text: "RailwayBot",
+            iconURL: "https://devicons.railway.app/i/railway-light.svg",
+        })
+        .setTimestamp();
+    }
     channel.send({ embeds: [embed] })
 }
 
