@@ -67,6 +67,7 @@ Since this bot is made in typescript, it uses discord.js, and other packages, so
     LOGCHANNEL=(channel id for deployment and crash logs)
     USAGECHANNEL=(channel id for usage reports)
     RAILWAYAPIKEY=(railway api key)
+    TEAMID=(Team ID (only populate if you are gonna use a team token))
    ```
 
 <p align="right">(<a href="#about-railwaybot">back to top</a>)</p>
